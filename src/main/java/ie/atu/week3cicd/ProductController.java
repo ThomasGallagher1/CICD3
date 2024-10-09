@@ -36,7 +36,7 @@ public class ProductController {
         return ResponseEntity.ok(products);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("deleteProducts/{id}")
     public ResponseEntity<List> removeProduct(@PathVariable int id)
     {
         for(int i = 0; i < products.size(); i++){
